@@ -1,0 +1,17 @@
+<!-- 디테일 페이지-->
+<html>
+<head>
+    <title>Photo App</title>
+</head>
+<body>
+    <h1>{{ photo.title }}</h1>
+    <h2><a href="edit/">Edit photo</a></h2>
+    <section>
+        <div>
+            <img src="{{ photo.image_url }}" alt="{{ photo.title }}" width="500">
+            <p>{{ photo.description }}</p>
+            <p>{{ photo.author }}, {{ photo.price }}원</p>
+        </div>
+    </section>
+</body>
+</html>
